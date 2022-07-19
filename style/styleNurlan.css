@@ -163,4 +163,16 @@
 .azerbaycan-text-box__third > img {
   width: 242px;
 }
+
+.turizm-box-with-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+}
+
+.margin-top-bottom-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 /*# sourceMappingURL=styleNurlan.css.map */
