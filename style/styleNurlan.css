@@ -296,4 +296,92 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.neshirler-container {
+  margin-bottom: 200px;
+}
+
+.neshr-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .neshr-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.neshr-container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 633px;
+}
+
+@media (max-width: 600px) {
+  .neshr-container-left {
+    gap: 10px;
+  }
+}
+
+.neshr-container-left .neshr-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.neshr-container-left .neshr-text {
+  color: #808080;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.neshr-container-left .neshr-data {
+  text-align: right;
+  color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+  float: right;
+}
+
+.neshr-img {
+  width: 200px;
+  height: 200px;
+}
+
+.neshr-icon {
+  width: 20px;
+}
 /*# sourceMappingURL=styleNurlan.css.map */
