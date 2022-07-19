@@ -58,11 +58,17 @@
 .container-azerbaijan {
   padding-top: 60px;
   width: 100%;
-  max-width: 854px;
+  max-width: 950px;
   margin: 0 auto;
   font-family: Merriweather, serif;
   font-size: 14px;
   margin-bottom: 105px;
+}
+
+@media (max-width: 480px) {
+  .container-azerbaijan {
+    font-size: 12px;
+  }
 }
 
 .qarabag__text-box {
@@ -120,5 +126,37 @@
     font-weight: 300;
     padding: 0px 5px 00px 5px;
   }
+}
+
+.azerbaycan-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 105px;
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+  .azerbaycan-text-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.medeniyyet-second-text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.azerbaycan-text-box__third > img {
+  width: 242px;
 }
 /*# sourceMappingURL=styleNurlan.css.map */

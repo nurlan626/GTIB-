@@ -55,11 +55,16 @@
 .container-azerbaijan {
   padding-top: 60px;
   width: 100%;
-  max-width: 854px;
+  max-width: 950px;
   margin: 0 auto;
   font-family: Merriweather, serif;
   font-size: 14px;
   margin-bottom: 105px;
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
+ 
+
 }
 
 .qarabag__text-box {
@@ -69,7 +74,11 @@
   font-weight: 500;
   margin-bottom: 105px;
   margin: 20px;
+
 }
+
+
+
 .qarabag__text-img {
   max-height: 322px;
   max-width: 322px;
@@ -108,4 +117,27 @@
     padding: 0px 5px 00px 5px;
 
   }  
+}
+
+.azerbaycan-text-box {
+  display: flex;
+  gap: 30px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-bottom: 105px;
+  margin: 20px;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+
+  } 
+}
+.medeniyyet-second-text{
+  margin-top: 50px;
+  margin-bottom: 50px;;
+}
+.azerbaycan-text-box__third{
+  > img {
+    width: 242px;
+  }
 }
