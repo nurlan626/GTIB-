@@ -71,6 +71,10 @@
   }
 }
 
+.container-azerbaijan .navigation {
+  margin-top: 50px;
+}
+
 .qarabag__text-box {
   display: -webkit-box;
   display: -ms-flexbox;
