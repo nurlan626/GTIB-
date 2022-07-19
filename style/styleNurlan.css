@@ -175,4 +175,125 @@
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+.books-container {
+  max-width: 976px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 45px;
+}
+
+.book-container {
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .book-container {
+    padding: 10px;
+  }
+}
+
+.book-container-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book-container-top > div {
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .book-container-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .book-container-top > div {
+    width: 100%;
+  }
+}
+
+.book-container-top > img {
+  width: 200px;
+}
+
+.book-container-top-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-container-top-text > div {
+  margin-top: 20px;
+}
+
+.book-container-bottom {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 17.6px;
+  color: #808080;
+}
+
+@media (max-width: 600px) {
+  .book-container-bottom {
+    font-size: 11px;
+  }
+}
+
+.book-button {
+  background-color: #0088B4;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 104px;
+}
+
+.book-button > img {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+}
+
+.books-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=styleNurlan.css.map */
