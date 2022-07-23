@@ -84,7 +84,21 @@
                         </ul>
                     </li>
                     <li class="nav__item">
-                        <a href="azerbaycan.html" class="nav__link">Azərbaycan</a>
+                        <a href="#" class="nav__link">Azərbaycan</a>
+                        <ul class="nav__submenu-list">
+                            <li class="nav__submenu-item">
+                                <a href="./azerbaycan.html" class="nav__submenu-link">Qarabağ Azərbaycandır!!!</a>
+                            </li>
+                            <li class="nav__submenu-item">
+                                <a href="./medeniyyet.html" class="nav__submenu-link">Mədəniyyət</a>
+                            </li>
+                            <li class="nav__submenu-item">
+                                <a href="./turizm.html" class="nav__submenu-link">Turizm</a>
+                            </li>
+                            <li class="nav__submenu-item">
+                                <a href="./Xerite.html" class="nav__submenu-link">Xəritə</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Fəaliyyət</a>
@@ -147,6 +161,9 @@
                             </li>
                             <li class="nav__submenu-item">
                                 <a href="teklifler.html" class="nav__submenu-link">Təkliflər</a>
+                            </li>
+                            <li class="nav__submenu-item">
+                                <a href="idea-banki.html" class="nav__submenu-link">İdea bankı</a>
                             </li>
                         </ul>
                     </li>
@@ -233,7 +250,7 @@
                     <div class="photo__block myBtn">
                         <img src="img/foto1.png" alt="photo">
                         <div class="photo__info">
-                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <p>--Lorem ipsum dolor sit amet, consectetur.</p>
                             <p>11 May 2022</p>
                         </div>
                     </div>
@@ -398,82 +415,12 @@
 </div>
 
 
-<button  class="myBtn">Открыть модальном окно</button>
-
-<!-- Модальном окно -->
-<div id="myModal" class="modal">
-
-  <!-- Модальное содержание -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="swiper-container">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./img/activity1.png" alt=""></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-    </div>
-  </div>
-
-</div>
 
 
 
 <script src="scripts/script.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction"
-        
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
 
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    var btn = document.querySelector(".myBtn");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>
 
     
 </body>

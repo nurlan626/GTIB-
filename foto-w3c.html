@@ -229,7 +229,7 @@
                     <img src="img/foto_title.png" alt="title">
                 </div>
                 <div class="photo__main">
-                    <div class="photo__block" onclick="showModal(); showSlides(4)">
+                    <div class="photo__block" onclick="openSliderAndModal()">
                         <img src="img/foto1.png" alt="photo">
                         <div class="photo__info">
                             <p>Lorem ipsum dolor sit amet, consectetur.</p>
@@ -397,7 +397,6 @@
     </div>
 
 
-    <button class="myBtn">Открыть модальном окно</button>
 
     <!-- Модальном окно -->
     <div id="myModal" class="modal">
@@ -508,17 +507,21 @@
     </script>
 
     <script>
-        var slideIndex;
+        var slideIndex = 1;
         showSlides(slideIndex);
-
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
-
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
+        function openSliderAndModal(number) {
+            console.log("openSliderAndModal");
+            showModal();
+            showSlides(1);
 
+            
+        }
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -535,10 +538,6 @@
             dots[slideIndex - 1].className += " active";
         }
     </script>
-
-
-
-
 </body>
 
 </html>

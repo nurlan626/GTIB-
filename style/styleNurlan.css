@@ -1,4 +1,9 @@
 @charset "UTF-8";
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 .title {
   width: -webkit-fit-content;
   width: -moz-fit-content;
