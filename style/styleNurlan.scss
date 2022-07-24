@@ -399,89 +399,49 @@ a{
   max-width: 700px;
 }
 
-////////////////////////Swiper////////////////////@at-root
-.swiper-container{
-  width: 100%;
-  height: 800px;
-}
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper-wrapper{
-  background-color: blue;
-}
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  height: 400px;
-  width: 400px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: flex-start;
-  @media (max-width: 450px) {
-    // padding-top: 200px;
-  }
-}
-.swiper-slide img {
-  display: block;
-  width: 90%;
-  height: auto;
-  object-fit: cover;
-}
-.swiper-buttons{
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.swiper-button-next{
-  color: white;
-}
-
-////////////////////////Swiper////////////////////@at-root
-
-
-///////////////////modal window///////////////@at-root
-/* Модальный (фон) */
+/////////////////////MODAL
 .modal {
-  display: none; /* Скрыто по умолчанию */
-  position: fixed; /* Оставаться на месте */
-  z-index: 1; /* Сидеть на вершине */
-  padding-top: 100px; /* Расположение коробки */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 20px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Полная ширина */
-  height: 100%; /* Полная высота */
-  overflow: auto; /* Включите прокрутку, если это необходимо */
-  background-color: rgb(0,0,0); /* Цвет запасной вариант  */
-  background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
-  @media (max-width: 450px) {
-    padding-top: 0px; 
-  }
-
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
-/* Кнопка закрытия */
+/* Modal Content */
+.modal-content {
+  background-color: transparent;
+  margin: auto;
+  padding: 0px;
+  border: 1px solid #888;
+  width: 98%;
+}
+
+/* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #040404;
   float: right;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: bold;
+  position: absolute;
+  right: 20px;
+  z-index: 10;
 }
 
 .close:hover,
@@ -491,11 +451,26 @@ a{
   cursor: pointer;
 }
 
-/////////////////////////////////////////////////////
-
-/// 
-.swiper-container{
-  background-color: transparent;
+.slider-container {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+.button-back {
+  position: absolute;
+  left: 0px;
+}
+.button-next {
+  position: absolute;
+  right: 0px;
+}
+.slider-img {
+  width: 100%;
+  max-width: 800px;
+  background-color: green;
+  margin: 10px;
 
 }
-

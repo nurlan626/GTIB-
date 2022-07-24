@@ -15,6 +15,7 @@
 
 <body>
 
+
     <header class="header">
         <img class="header__back" src="img/header__back-small.png" alt="header__back">
         <div class="container">
@@ -238,6 +239,17 @@
     </div>
     <!-- Sehifelerin ici upgrade olacaqdir. -->
 
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span onclick="closeSlider()" class="close">&times;</span>
+            <div class="slider-container">
+                <div class="button-back" onclick="previousImage()"><img class=""icon src="./img/left.svg" alt=""></div>
+                <img class="slider-img" name="slide" alt="">
+                <div class="button-next" onclick="nextImage()"><img class="icon" src="./img/right.svg" alt=""></div>
+            </div>  
+        </div>
+    </div>
 
     <div class="activity">
         <div class="container">
@@ -247,40 +259,40 @@
                 </div>
                 <div class="photo__main">
                     <div class="photo__block myBtn">
-                        <img src="img/foto1.png" alt="photo">
+                        <img onclick="startSlider(0)" src="img/foto1.png" alt="photo">
+                    </div>
+                    <div class="photo__block myBtn">
+                        <img onclick="startSlider(1)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(2)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(3)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(4)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(5)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(6)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(7)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(8)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(9)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(10)" src="img/foto1.png" alt="photo">
                     </div>
                     <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img src="img/foto1.png" alt="photo">
+                        <img  onclick="startSlider(11)" src="img/foto1.png" alt="photo">
                     </div>
                 </div>
                 <div class="navigation">
@@ -311,6 +323,7 @@
             </div>
         </div>
     </div>
+ 
 
 
 
@@ -364,66 +377,14 @@
             </div>
         </div>
     </div>
-
-
-    <button class="myBtn">Открыть модальном окно</button>
-
-    <!-- Модальном окно -->
-    <div id="myModal" class="modal">
-
-        <!-- Модальное содержание -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="swiper-container">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png"alt=""></div>
-                    </div>
-                    <div class="swiper-buttons">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
+  
     <script src="scripts/script.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                type: "fraction"
-
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
 
         // Get the button that opens the modal
-        var btn = document.querySelector(".myBtn");
+        var btn = document.getElementById("myBtn");
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -445,8 +406,57 @@
             }
         }
     </script>
+    <script> // Silder script
 
 
+        var i = null;
+        var images = [];
+        var time = 3000;
+
+        //image List
+        images[0] = './img/gallery/10.png'
+        images[1] = './img/gallery/02.png'
+        images[2] = './img/gallery/10.png'
+        images[3] = './img/gallery/04.png'
+        images[4] = './img/gallery/05.png'
+        images[5] = './img/gallery/06.png'
+        images[6] = './img/gallery/07.png'
+        images[7] = './img/gallery/08.png'
+        images[8] = './img/gallery/10.png'
+        images[9] = './img/gallery/09.png'
+
+
+
+        function startSlider(i){
+            modal.style.display = "block";
+            document.slide.src = images[i];
+        }
+        function closeSlider() {
+            modal.style.display = "none"; 
+            console.log('close');
+        }
+
+
+        function nextImage() {
+            if (i === images.length - 1) {
+                i = 0;
+            } else {
+                ++i;
+            }
+            document.slide.src = images[i];
+
+        }
+        function previousImage() {
+            console.log(images.length);
+            if (i === 0) {
+                i = images.length - 1;
+            } else {
+                i--;
+            }
+            document.slide.src = images[i];
+        }
+    </script>
+   
 </body>
 
 </html>
