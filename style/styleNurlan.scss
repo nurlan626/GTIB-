@@ -1,4 +1,4 @@
-a{
+a {
   all: unset;
   cursor: pointer;
 }
@@ -20,7 +20,6 @@ a{
   }
 }
 
-
 .title .underlined {
   width: 100%;
   display: flex;
@@ -28,19 +27,19 @@ a{
   margin-top: 10px;
 }
 
-.title .underlined>.blue {
+.title .underlined > .blue {
   background-color: #00a9d2;
   height: 3px;
   width: 30%;
 }
 
-.title .underlined>.red {
+.title .underlined > .red {
   background-color: #d72c18;
   height: 3px;
   width: 30%;
 }
 
-.title .underlined>.green {
+.title .underlined > .green {
   background-color: #00a65a;
   height: 3px;
   width: 30%;
@@ -68,7 +67,7 @@ a{
     font-size: 12px;
   }
 }
-.container-azerbaijan .navigation{
+.container-azerbaijan .navigation {
   margin-top: 50px;
 }
 
@@ -79,10 +78,7 @@ a{
   font-weight: 500;
   margin-bottom: 105px;
   margin: 20px;
-
 }
-
-
 
 .qarabag__text-img {
   max-height: 322px;
@@ -122,7 +118,6 @@ a{
     line-height: 11px;
     font-weight: 300;
     padding: 0px 5px 00px 5px;
-
   }
 }
 
@@ -137,38 +132,36 @@ a{
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: center;
-
   }
 }
 
 .medeniyyet-second-text {
   margin-top: 50px;
   margin-bottom: 50px;
-  ;
 }
 
 .azerbaycan-text-box__third {
-  >img {
+  > img {
     width: 242px;
   }
 }
-.turizm-box-with-icon{
+.turizm-box-with-icon {
   display: flex;
   gap: 18px;
 }
-.margin-top-bottom-60{
+.margin-top-bottom-60 {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-.books-container{
+.books-container {
   max-width: 976px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 45px;
 }
-.book-container{
+.book-container {
   max-width: 450px;
   display: flex;
   flex-direction: column;
@@ -176,9 +169,8 @@ a{
   @media (max-width: 600px) {
     padding: 10px;
   }
-
 }
-.book-container-top{
+.book-container-top {
   display: flex;
   gap: 20px;
   font-size: 16px;
@@ -194,11 +186,11 @@ a{
       width: 100%;
     }
   }
-  >img {
+  > img {
     width: 200px;
   }
 }
-.book-container-top-text{
+.book-container-top-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -206,7 +198,7 @@ a{
     margin-top: 20px;
   }
 }
-.book-container-bottom{
+.book-container-bottom {
   margin-top: 30px;
   font-size: 14px;
   line-height: 17.6px;
@@ -215,8 +207,8 @@ a{
     font-size: 11px;
   }
 }
-.book-button{
-  background-color: #0088B4;
+.book-button {
+  background-color: #0088b4;
   color: white;
   border-radius: 10px;
   border: none;
@@ -231,14 +223,14 @@ a{
     background-color: red;
   }
 }
-.books-buttons{
+.books-buttons {
   display: flex;
   justify-content: space-between;
 }
 .neshirler-container {
   margin-bottom: 200px;
 }
-.neshr-container{
+.neshr-container {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -249,9 +241,8 @@ a{
     flex-direction: column;
     align-items: center;
   }
-
 }
-.neshr-container-left{
+.neshr-container-left {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -260,14 +251,13 @@ a{
   @media (max-width: 600px) {
     gap: 10px;
   }
-  
-  .neshr-title{
+
+  .neshr-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-
   }
-  .neshr-text{
+  .neshr-text {
     color: #808080;
     font-weight: 400;
     font-size: 14px;
@@ -281,17 +271,16 @@ a{
     justify-content: flex-end;
     gap: 10px;
     float: right;
-
   }
 }
-.neshr-img{
+.neshr-img {
   width: 200px;
   height: 200px;
 }
-.neshr-icon{
+.neshr-icon {
   width: 20px;
 }
-.form-container{
+.form-container {
   text-align: center;
   // background-color: red;
   display: flex;
@@ -300,56 +289,54 @@ a{
   color: #363740;
   margin-bottom: 300px;
 }
-.form-control{
+.form-control {
   display: flex;
   flex-direction: column;
   text-align: left;
   gap: 5px;
   margin-bottom: 20px;
-  
 }
-.form-contact{
+.form-contact {
   width: 100%;
   max-width: 583px;
   padding: 20px;
-
 }
-.input-contact{
+.input-contact {
   height: 50px;
   width: 100%;
   // max-width: 583px;
-  background-color: #F7F9FC;
+  background-color: #f7f9fc;
   border: 1px solid grey;
   border-radius: 6px;
 }
-.input-contact-message{
+.input-contact-message {
   height: 133px;
   width: 100%;
   // max-width: 583px;
-  background-color: #F7F9FC;
+  background-color: #f7f9fc;
   border: 1px solid grey;
   border-radius: 6px;
 }
-.star{
+.star {
   height: 6px;
   position: relative;
   bottom: 10px;
 }
-.contact-subtitle{
+.contact-subtitle {
   font-size: 18px;
   margin-left: 100px;
   margin-bottom: 40px;
   font-weight: 400;
-  
+
   @media (max-width: 600px) {
     padding-left: 20px;
     margin-left: 0px;
   }
 }
-.contact-button{
+.contact-button {
   margin-top: 70px;
   font-size: 18px;
-  background-color: #01A2D6;
+  background-color: #01a2d6;
   width: 176px;
   height: 52px;
   border: 1px solid white;
@@ -357,48 +344,46 @@ a{
   color: white;
   box-shadow: 2px 2px 2px #6e6e6e;
 }
-.input-upload{
+.input-upload {
   background-color: red;
-   width: 146px;
+  width: 146px;
   // height: 31px;
   padding: 10px;
   padding-left: 5px;
   border-radius: 5px;
-  background-color: #F7F9FC;
+  background-color: #f7f9fc;
   border: 1px solid grey;
   text-align: center;
   color: grey;
   font-size: 10px;
 }
-.xeber-container{
+.xeber-container {
   display: flex;
   max-width: 950px;
   margin: 0 auto;
 }
-.xeber__news-featured{
+.xeber__news-featured {
   width: 278px;
 }
 
-.xeber-inner{
+.xeber-inner {
   display: flex;
   @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
     gap: 50px;
   }
-
 }
-.xeber__news-features{
+.xeber__news-features {
   max-width: 277px;
   padding: 15px;
   border: 1px solid rgb(57, 57, 57);
   height: fit-content;
 }
 
-.xeber-left{
+.xeber-left {
   max-width: 700px;
 }
-
 
 /////////////////////MODAL
 .modal {
@@ -473,9 +458,7 @@ a{
   max-width: 800px;
   background-color: green;
   margin: 10px;
-
 }
-
 
 ///////////////////@at-root
 .tooltip {
@@ -518,3 +501,30 @@ a{
   opacity: 1;
 }
 ///////////
+.lb-outerContainer {
+  max-width: 690px;
+  max-height: 520px;
+}
+.lb-image {
+  width: 500px !important;
+  max-height: 500px !important;
+  background-color: red;
+}
+
+#lbImage {
+
+  width:320px;
+  height:240px;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  -moz-background-size: cover;
+  color: red;
+
+}
+.lightbox{
+  background-color: red;
+}
+.lightboxOverlay{
+  background-color: red;
+}

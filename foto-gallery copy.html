@@ -17,7 +17,6 @@
 
 <body>
 
-
     <header class="header">
         <img class="header__back" src="img/header__back-small.png" alt="header__back">
         <div class="container">
@@ -251,51 +250,71 @@
     </div>
     <!-- Sehifelerin ici upgrade olacaqdir. -->
 
-
     <div class="activity">
         <div class="container">
             <div class="activity__content">
                 <div class="activity__title">
                     <img src="img/foto_title.png" alt="title">
                 </div>
-                <div class="photo__main">
-                    <div class="photo__block myBtn">
-                        <img onclick="startSlider(0)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block myBtn">
-                        <img onclick="startSlider(1)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(2)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(3)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(4)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(5)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(6)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(7)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(8)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(9)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(10)" src="img/foto1.png" alt="photo">
-                    </div>
-                    <div class="photo__block">
-                        <img  onclick="startSlider(11)" src="img/foto1.png" alt="photo">
+                <div class="container">
+                    <div class="photo__main gallery">
+                        <a href="./img/foto1.png" data-lightbox="models" data-title="Caption1">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/foto1.png" class="img-slider" alt="photo" style={width="500px"}>
+                            </div>
+                        </a>
+                        <a href="./img/slider/02.png" data-lightbox="models" data-title="Caption2">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/slider/02.png" alt="photo">
+                            </div>
+                        </a>
+                        <a href="./img/slider/03.png" data-lightbox="models" data-title="Caption3">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/slider/03.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/slider/04.png" data-lightbox="models" data-title="Caption4">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/slider/04.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/slider/05.png" data-lightbox="models" data-title="Caption5">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/slider/05.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/foto1.png" data-lightbox="models" data-title="Caption6">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/foto1.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/foto1.png" data-lightbox="models" data-title="Caption7">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/foto1.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/foto1.png" data-lightbox="models" data-title="Caption8">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/foto1.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/foto1.png" data-lightbox="models" data-title="Caption9">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/foto1.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/foto1.png" data-lightbox="models" data-title="Caption10">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/foto1.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/foto1.png" data-lightbox="models" data-title="Caption11">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/foto1.png" alt="photo">
+                            </div>
+                        </a> <a href="./img/foto1.png" data-lightbox="models" data-title="Caption12">
+                            <div class="photo__block myBtn ">
+                                <img src="./img/foto1.png" alt="photo">
+                            </div>
+                        </a>
+    
+    
+                        
                     </div>
                 </div>
+                
                 <div class="navigation">
                     <div class="navigation__bar">
                         <div class="navigation__number">
@@ -324,9 +343,6 @@
             </div>
         </div>
     </div>
- 
-
-
 
     <footer class="footer">
         <div class="footer__back">
@@ -380,38 +396,12 @@
     </div>
   
     <script src="scripts/script.js"></script>
+    <script src="./scripts/lightbox-plus-jquery.min.js">
+    </script>
     <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-     <script src="./scripts/lightbox-plus-jquery.min.js">
-
+        console.log(document.getElementsByClassName('lb-image').style.width);
     </script>
 
-   
 </body>
 
 </html>
